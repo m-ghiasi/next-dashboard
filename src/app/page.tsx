@@ -32,7 +32,7 @@ export default function Home() {
           <Image
           width={1000}
           height={760}
-            src="/hero-desktop.png"
+            src="/hero-mobile.png"
             alt="img"
             className="hidden md:block"
           />
