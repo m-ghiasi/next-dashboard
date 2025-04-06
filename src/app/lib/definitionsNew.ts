@@ -62,3 +62,22 @@ export type CustomerField = {
     amount: number;
     status: 'pending' | 'paid'
 }
+export type LatestInvoiceRaw = Omit<LatestInvoice, 'amount'> & {
+    amount: number;
+  };
+  export type CustomersTableType = {
+    id: string;
+    name: string;
+    email: string;
+    image_url: string;
+    total_invoices: number;
+    total_pending: number;
+    total_paid: number;
+  };
+
+  export type InvoiceForm = {
+    id: string;
+    customer_id: string;
+    amount: number;
+    status: 'pending' | 'paid';
+  };
