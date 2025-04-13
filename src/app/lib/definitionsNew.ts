@@ -14,7 +14,7 @@ export type Customer = {
 export type Invoice = {
     id: string;
     customer_id:string;
-    amount: number;
+    amount: number ;
     date : string;
     status :'pending' | 'paid'
 }
