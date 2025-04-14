@@ -60,7 +60,8 @@ export type CustomerField = {
     id : string;
     customer_id : number;
     amount: number;
-    status: 'pending' | 'paid'
+    status: 'pending' | 'paid';
+    name:string
 }
 export type LatestInvoiceRaw = Omit<LatestInvoice, 'amount'> & {
     amount: number;
